@@ -1,0 +1,24 @@
+.page {
+    padding: 2rem;
+}
+
+.input-field {
+    margin: 2rem 0;
+}
+
+.long-text {
+    height: 5rem;
+}
+
+.row-display {
+    display: flex;
+    align-items: center;
+}
+
+select:first-child {
+    color: #9e9e9e;
+}
+
+.display-none {
+    display: none;
+}

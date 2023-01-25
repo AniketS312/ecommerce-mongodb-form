@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Product | Dashboard</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 class="center-align">Add Products</h1>
+    <div class="row page">
+        <form class="col s12" method="POST" href="/">
+            <div class="row">
+                <div class="input-field col s6">
+                    <input name="name" placeholder="Product Name" id="product-name" type="text" class="validate">
+                    <label for="product-name">Product Name</label>
+                    <p class="text red-text display-none">Please insert a valid name</p>
+                </div>
+                <div class="input-field col s6">
+                    <input name="price" placeholder="Product Price" id="product-price" type="number" step=".01" class="validate">
+                    <label for="product-name">Product Price</label>
+                    <p class="text red-text display-none">Please insert a valid price to 2 decimal place</p>
+                </div>
+                
+            </div>
+            <div class="row">
+                <div class="input-field col s12 long-text">
+                    <input name="description" placeholder="Product Description" id="product-description" type="text" class="validate">
+                    <label for="product-description">Product Description</label>
+                    <p class="text red-text display-none">Please insert a valid description</p>
+                </div>
+            </div>
+            <div class="row row-display">
+                <div class="input-field col s6">
+                    <!-- <label>Select Category</label> -->
+                    <select id="product-category" name="category" class="browser-default">
+                      <option value="" disabled selected class="special-select">Select Category</option>
+                      <option value="Earrings">Earrings</option>
+                      <option value="Necklace">Necklace</option>
+                      <option value="Rings" >Rings</option>
+                    </select>
+                    <p class="text red-text display-none">Please select a valid option</p>
+                </div>
+
+                    <p class="col s6 center-align">
+                        <label>
+                          <input id="featured-text" name="featured" type="checkbox" value="true"/>
+                          <span>Is Featured?</span>
+                        </label>
+                      </p>
+                  
+            </div>
+            <button id="submit-button" class="btn waves-effect waves-light btn-large col s12 disabled" type="submit" name="action">Submit
+                <i class="material-icons right"></i>
+              </button>
+            
+        </form>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script type="text/javascript" src="./index.js"></script>
+</body>
+</html>
